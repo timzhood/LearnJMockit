@@ -11,8 +11,9 @@ public class Jim
 
     public int doStuff(int number1, int number2)
     {
-        LOGGER.debug("adding " + number1 + " with " + number2);
-        return number1 + number2;
+        final int result = number1 + number2;
+        LOGGER.debug("adding " + number1 + " with " + number2 + " to make " + result);
+        return result;
     }
 
 }

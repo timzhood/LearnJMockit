@@ -15,7 +15,7 @@ public class TestJim
 
         new Verifications()
         {{
-            logger.debug(anyString);
+            logger.debug(withSubstring("3"));
             times = 1;
         }};
     }
